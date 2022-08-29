@@ -1,0 +1,96 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+.container {
+  background-color: white;
+  width: 80%;
+  height: 50%;
+  margin: 10%;
+  border-radius: 10px;
+}
+
+.container img {
+  width: 100%;
+  object-fit: cover; /*thanks to google*/
+  border-radius: 10px 10px 0 0;
+}
+
+.info {
+  margin: 20px;
+}
+
+.info .image-title {
+  letter-spacing: 5px;
+}
+
+.info h1 {
+  font-size: 2.3rem;
+  font-family: 'Fraunces';
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: gray;
+  line-height: 1.5;
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newPrice {
+  font-family: 'Fraunces';
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+  margin: 5px 10px 5px 0;
+}
+.oldPrice {
+  color: gainsboro;
+  text-decoration: line-through;
+}
+
+.container button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  margin: 20px 0;
+}
+
+#icon {
+  padding: auto;
+  padding-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+@media screen and (min-width: 1166px) {
+  body {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .container {
+    width: 70%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+  }
+
+  .container img {
+    width: 100%;
+    object-fit: cover; /*thanks to google*/
+    border-radius: 10px 10px 0 0;
+  }
+}
